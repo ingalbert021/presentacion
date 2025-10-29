@@ -8,7 +8,10 @@ font-family: 'Lora', serif;
     display: grid;
     align-items: center;
     justify-content: center;
-    background: #eeeeee;
+    background-image: url('../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card {
@@ -49,14 +52,15 @@ font-family: 'Lora', serif;
     border-radius: 50%;
 }
 
-.portada {
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-position: bottom center;
-    background-size: cover;
-}
+.portada img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+    }
 
 img {
     width: 100%;
@@ -68,10 +72,12 @@ img {
 .card-text {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    
 }
 
 .title-total {
     padding: 2.5em 1.5em 1.5em 1.5em;
+    
 }
 
 path {
