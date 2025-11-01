@@ -113,3 +113,74 @@ button {
 button:hover {
     color: #0365f6;
 }
+
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+  display: flex;           
+  align-items: center;     
+  justify-content: center; 
+  height: 100%;           
+}
+
+a:hover {
+  text-decoration: none; /* evita que aparezca subrayado al pasar el mouse */
+  color: inherit; /* evita el color azul */
+}
+
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(60, 57, 57);
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: #0f9946;
+}
+
+ul li:nth-child(2) a:before{
+  background: #464343;
+}
+
+ul li:nth-child(3) a:before {
+  background: #128bee;
+}
